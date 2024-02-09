@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Activity.CouseDetailsActivity">
 
+    <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
+
     <ImageView
         android:id="@+id/pic"
         android:layout_width="match_parent"
@@ -39,6 +41,8 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -48,7 +52,10 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="10dp"
+            >
 
             <ImageView
                 android:id="@+id/imageView11"
@@ -124,19 +131,54 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:scrollbars="none"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/des"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingBottom="70dp"
+                />
         </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple"
+        android:src="@drawable/voice_search"
+        android:foregroundTint="@color/white"
+        app:tint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/buyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NoCornerRadiusExtendedFloatingActionButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:icon="@drawable/add_shopping_cart"
+        android:text="Buy Now"
+        android:backgroundTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+<!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

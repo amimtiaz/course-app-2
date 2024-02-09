@@ -31,7 +31,7 @@
                 android:layout_marginEnd="16dp"
                 android:orientation="horizontal">
 
-                <EditText
+                <SearchView
                     android:id="@+id/editTextText"
                     android:layout_width="0dp"
                     android:layout_height="45dp"
@@ -84,6 +84,8 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
+            <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -156,6 +158,8 @@
                     android:textColor="@color/red" />
             </LinearLayout>
 
+            <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -225,6 +229,8 @@
                         android:textColor="@color/purple"
                         android:textSize="17sp" />
                 </LinearLayout>
+
+                <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -331,6 +337,8 @@
         </LinearLayout>
     </ScrollView>
 
+    <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
+
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -377,6 +385,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/wishlist"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -454,8 +463,12 @@
 
         </com.google.android.material.bottomappbar.BottomAppBar>
 
+        <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--   Owner Imtiaz || mail: info.devimtiaz@gmail.com -->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

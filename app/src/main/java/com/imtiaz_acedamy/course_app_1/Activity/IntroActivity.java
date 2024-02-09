@@ -16,6 +16,8 @@ public class IntroActivity extends AppCompatActivity {
 
     ActivityIntroBinding binding;
 
+    /* Owner Imtiaz || mail: info.devimtiaz@gmail.com */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

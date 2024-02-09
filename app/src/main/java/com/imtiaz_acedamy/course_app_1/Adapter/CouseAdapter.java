@@ -33,6 +33,8 @@ public class CouseAdapter extends RecyclerView.Adapter<CouseAdapter.ViewHolder> 
         formatter = new DecimalFormat("###,###,###,###.##");
     }
 
+    /* Owner Imtiaz || mail: info.devimtiaz@gmail.com */
+
     @NonNull
     @Override
     public CouseAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -46,6 +48,7 @@ public class CouseAdapter extends RecyclerView.Adapter<CouseAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull CouseAdapter.ViewHolder holder, int position) {
         holder.titleTxt.setText(items.get(position).getTitle());
         holder.ownerTxt.setText(items.get(position).getOwner());
+        holder.des.setText(items.get(position).getDes());
         holder.starTxt.setText((""+formatter.format(items.get(position).getStar())));
         holder.priceTxt.setText( "$"+formatter.format(items.get(position).getPrice()));
 
@@ -59,7 +62,7 @@ public class CouseAdapter extends RecyclerView.Adapter<CouseAdapter.ViewHolder> 
                 CouseDetailsActivity.TITLE = holder.titleTxt.getText().toString();
                 CouseDetailsActivity.PRICE = holder.priceTxt.getText().toString();
                 CouseDetailsActivity.RATEING = holder.starTxt.getText().toString();
-               // CouseDetailsActivity.DESCRIPTION = holder.des.getText().toString();
+                CouseDetailsActivity.DESCRIPTION = holder.des.getText().toString();
 
                 Bitmap bitmap = ((BitmapDrawable) holder.pic.getDrawable()).getBitmap();
                 CouseDetailsActivity.MY_BITMAP = bitmap;
@@ -81,6 +84,8 @@ public class CouseAdapter extends RecyclerView.Adapter<CouseAdapter.ViewHolder> 
 
     }
 
+    /* Owner Imtiaz || mail: info.devimtiaz@gmail.com */
+
     @Override
     public int getItemCount() {
         return items.size();
@@ -101,4 +106,7 @@ public class CouseAdapter extends RecyclerView.Adapter<CouseAdapter.ViewHolder> 
             pic = itemView.findViewById(R.id.pic);
         }
     }
+
+
+    /* Owner Imtiaz || mail: info.devimtiaz@gmail.com */
 }
