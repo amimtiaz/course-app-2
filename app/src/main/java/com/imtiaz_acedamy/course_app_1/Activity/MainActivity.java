@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 
@@ -36,13 +38,17 @@ public class MainActivity extends AppCompatActivity {
     private void initRecyclerView() {
         ArrayList<CouseDomain> itemsArrayList = new ArrayList<>();
 
-        itemsArrayList.add(new CouseDomain("Quick Learn C# Language", "Jammie Young", 130, 4.2, "pic1"));
-        itemsArrayList.add(new CouseDomain("Full Course android kotlin", "ALex Alba", 460, 4.6, "pic2"));
-        itemsArrayList.add(new CouseDomain("Quick Learn Java Language", "Sara Anderson", 700, 4.0, "pic1"));
-        itemsArrayList.add(new CouseDomain("Quick Learn C# Language", "Jammie Young", 130, 4.3, "pic2"));
+        itemsArrayList.add(new CouseDomain("Quick Learn C# Language", "Jammie Young", 130, 4.2, "pic1", "This disease can cause blindness. We have no idea what has happened to cause people to stay away"));
+        itemsArrayList.add(new CouseDomain("Full Course android kotlin", "ALex Alba", 460, 4.6, "pic2", "This disease can cause blindness. We have no idea what has happened to cause people to stay away"));
+        itemsArrayList.add(new CouseDomain("Quick Learn C# Language", "Jammie Young", 130, 4.3, "pic1", "This disease can cause blindness. We have no idea what has happened to cause people to stay away"));
+        itemsArrayList.add(new CouseDomain("Quick Learn C# Language", "Jammie Young", 130, 4.2, "pic1", "This disease can cause blindness. We have no idea what has happened to cause people to stay away"));
+        itemsArrayList.add(new CouseDomain("Full Course android kotlin", "ALex Alba", 460, 4.6, "pic2", "This disease can cause blindness. We have no idea what has happened to cause people to stay away"));
+        itemsArrayList.add(new CouseDomain("Quick Learn C# Language", "Jammie Young", 130, 4.3, "pic1", "This disease can cause blindness. We have no idea what has happened to cause people to stay away"));
 
         binding.popularView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         binding.popularView.setAdapter(new CouseAdapter(itemsArrayList));
+
+
     }
 
     // Owner Imtiaz || mail: info.devimtiaz@gmail.com

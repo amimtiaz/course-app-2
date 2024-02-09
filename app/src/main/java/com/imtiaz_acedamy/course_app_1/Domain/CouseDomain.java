@@ -6,17 +6,28 @@ public class CouseDomain {
     private double price;
     private double star;
     private String picPath;
+    private  String des;
 
-    public CouseDomain(String title, String owner, double price, double star, String picPath) {
+
+    public CouseDomain(String title, String owner, double price, double star, String picPath, String des) {
         this.title = title;
         this.owner = owner;
         this.price = price;
         this.star = star;
         this.picPath = picPath;
+        this.des = des;
     }
 
     public String getTitle() {
         return title;
+    }
+
+    public String getDes() {
+        return des;
+    }
+
+    public void setDes(String des) {
+        this.des = des;
     }
 
     public void setTitle(String title) {
